@@ -14,6 +14,12 @@ http://chokkan.org/software/simstring/swig/index.html#sample
 So far I could only get this to work on linux (some compliation issues on mac...)
 
 
+
 To use,
 
-clone this repo:
+$ sudo apt-get install automake swig
+$ git clone git@github.com:oinbar/simstring.git
+$ cd simstring
+$ sudo sh ./autogen.sh
+$ sudo ./configure
+$ sudo make install
