@@ -22,4 +22,7 @@ $ git clone git@github.com:oinbar/simstring.git
 $ cd simstring
 $ sudo sh ./autogen.sh
 $ sudo ./configure
-$ sudo make install
+$ cd swig/python
+$ sudo sh ./prepare.sh --swig
+$ sudo python setup.py build_ext --inplace
+$ sudo python setup.py install
